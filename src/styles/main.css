@@ -1,0 +1,156 @@
+/**
+    COLORS
+**/
+
+:root {
+    --first-white   : #FDFEFE;
+    --first-blue    : #039BE5;
+    --first-gray    : #263238;
+    --first-orange  : #F4511E;
+    --first-black   : #212121;
+    --fisrt-green   : #009688;
+}
+
+/*
+    SIZES
+*/
+
+:root {
+    --wchat-header-height : 4rem;
+}
+
+
+body {
+    margin:  0 0 0;
+    margin-top: var(--wchat-header-height);
+}
+
+.wchat-header {
+  
+    width       : 100%;
+    max-height  : var(--wchat-header-height);
+    position: fixed;
+    top: 0;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 1px 1px  15px 5px rgba(0, 0, 0, .2);
+}
+
+.flex-row {
+    
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-grow {
+    flex-grow: 3;
+}
+
+.navigation  {
+    width: 60%;
+   
+}
+
+.navigation ul {
+    list-style: none;
+}
+
+.flex-row li {
+    margin: 1em;
+}
+
+a {
+    text-decoration: none;
+    border: transparent;
+}
+
+.btn {
+    
+    width: 8em;
+    padding: .5em;
+    background-color: transparent;
+    border: transparent 1px;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--first-white);
+
+    background-color:#039BE5;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: ease-in-out 400ms;
+}
+
+.btn:hover {
+    background-color: #05618f;
+   
+    transition: ease-in-out 400ms;
+    box-shadow: 1px 1px 2.6px 1.5px rgba(0, 0, 0, .2);
+    
+}
+
+
+.logo {
+    font-size: 2em;
+    color: var(--first-blue);
+}
+
+
+.modal-container {
+    position: fixed;
+    width: 100%;
+    background-color:rgba(0, 0, 0, .75);
+    height: 100vh;
+    z-index: 999;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    min-height: 30em;
+    min-width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5%;
+    background-color: var(--first-white);
+}
+
+
+.modal-header {
+    padding: 1em;
+}
+
+.modal-header p {
+    font-weight: 500;
+    font-size: 1.3em;
+}
+modal-content {
+    width: 75em;
+}
+
+
+.container-input {
+    margin: 1em 0;
+    width: 100%;
+
+}
+
+
+
+.container-input input {
+    border: .8px var(--first-gray) solid;
+    outline: none;
+    padding: .8em;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    width: 100%;
+}
+
+
