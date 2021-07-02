@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const InitialAppContext = {
     userToken: null,
-    user: {}
+    user: {},
+    openModal: false
 }
 
 export const AppContext = React.createContext(InitialAppContext);
@@ -11,10 +12,11 @@ export const AppContext = React.createContext(InitialAppContext);
 
 export function AppProvider({children}) {
 
-    
+    let [appContext, setAppContext] = useState(InitialAppContext);
+
     
    return <>
-        <AppContext.Provider value={InitialAppContext}>
+        <AppContext.Provider value={{appContext, setAppContext}}>
             {children}
         </AppContext.Provider>
     </>

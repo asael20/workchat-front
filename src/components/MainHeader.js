@@ -1,22 +1,30 @@
-import PageNavigation from './PageNavigation';
-import SigininButton from './SigninButton';
+import { useContext } from 'react';
+import { AppContext } from '../context/AppContext';
 
-import '../styles/main.css'
+import PageNavigation from '../workcha-page/PageNavigation';
+import SigininButton  from '../workcha-page/SigninButton';
+
+import '../styles/main.css';
 
 
 
 function MainHeader() {
     
-       
+    let {appContext, setAppContext} = useContext(AppContext);
+    
+    function changeOpenModal() {
+        let ctx = {...appContext}
+        ctx.openModal = true;
+        setAppContext(ctx);
+    }
+    
     return <> 
         <header className="wchat-header">
            <div className="flex-row">
-                <a href="/#" className="logo" >Workchat</a>
-
-                <PageNavigation />
-                                               
                 <SigininButton />
-                <button className="btn ">Sign out</button>
+                <button className="btn " onClick={changeOpenModal}>Sign up</button>
+                <PageNavigation />
+                <a href="/#" className="logo" >Workchat</a>
            </div>
         </header>    
     </>

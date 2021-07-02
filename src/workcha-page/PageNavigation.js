@@ -1,15 +1,11 @@
-import '../styles/main.css'
+import '../styles/main.css';
 
 import { 
     HashRouter,
     BrowserRouter as Router,
-    Link,
-    // Switch,
-    // Route
+    Link
 } from "react-router-dom";
-// import About from './About';
-// import ServicesPage from './ServicesPage';
-// import BlogPage from './BlogPage';
+
 
 function PageNavigation (){ 
     

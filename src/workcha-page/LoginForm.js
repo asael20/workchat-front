@@ -4,7 +4,6 @@ import '../styles/main.css';
 function LoginForm() {
     
     return <>
-
     <form>
         <div className="container-input">
             <label>
@@ -18,11 +17,10 @@ function LoginForm() {
             </label>
         </div>
 
-        <div >
-            <input className="btn" type="submit"  value="Sign in"/>
+        <div>
+            <input className="btn btn-login" type="submit"  value="Sign in"/>
         </div>
     </form>
-
     </>
 }
 

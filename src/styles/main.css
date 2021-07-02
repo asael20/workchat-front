@@ -84,6 +84,13 @@ a {
     transition: ease-in-out 400ms;
 }
 
+
+.btn.btn-login {
+    width: 100%;
+}
+
+
+
 .btn:hover {
     background-color: #05618f;
    
@@ -104,7 +111,7 @@ a {
     width: 100%;
     background-color:rgba(0, 0, 0, .75);
     height: 100vh;
-    z-index: 999;
+    z-index: -1;
     top: 0;
     display: flex;
     justify-content: center;
@@ -112,8 +119,9 @@ a {
 }
 
 .modal {
-    min-height: 30em;
-    min-width: 25%;
+    min-height: 20em;
+    min-width: 30%;
+    padding: 1.2em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -130,6 +138,7 @@ a {
     font-weight: 500;
     font-size: 1.3em;
 }
+
 modal-content {
     width: 75em;
 }
@@ -153,4 +162,8 @@ modal-content {
     width: 100%;
 }
 
+
+.container-input input:focus {
+    border:var(--first-blue) 2.6px solid;
+}
 

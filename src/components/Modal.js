@@ -1,4 +1,4 @@
-import '../styles/main.css'
+import '../styles/main.css';
 
 function Modal({children, title}) {
     
@@ -17,8 +17,7 @@ function Modal({children, title}) {
                 </div>
             </div>
         </>
-    )
-    
+    );
 }
 
 
